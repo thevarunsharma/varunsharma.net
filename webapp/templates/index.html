@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{page.title}}</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{{page.icon}}" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{{page.css}}">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="{{basic.profile_img}}" alt="{{basic.name}}" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="{{basic.name}}">{{basic.name}}</h1>
+
+          <p class="title">{{basic.title}}</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:{{basic.email}}" class="contact-link">{{basic.email}}</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:{{basic.phone}}" class="contact-link">{{basic.phone}}</a>
+            </div>
+
+          </li> -->
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="{{basic.dob}}">{{basic.date_of_birth}}</time>
+            </div>
+
+          </li> -->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>{{basic.address}}</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="{{basic.linkedin}}" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="{{basic.github}}" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <!-- <li class="social-item">
+            <a href="{{basic.instagram}}" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li> -->
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Posts</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          {% for line in about.text.split('\n') %}
+          <p>
+            {{line | safe}}
+          </p>
+          {% endfor %}
+        </section>
+
+
+        <!--
+          LINKS
+        -->
+        <section>
+            <div class="link-flexbox">
+              <div class="link-box">
+                <a href="{{basic.github}}" class="social-link" target="blank">
+                  <div class="service-icon-box">
+                    <img src="{{assets.github_logo}}" width="40"/>
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Github</h4>
+                  </div>
+                </a>
+              </div>
+
+              <div class="link-box">
+              <a href="{{basic.linkedin}}" class="social-link" target="blank">
+                <div class="service-icon-box">
+                    <img src="{{assets.linkedin_logo}}" width="40"/>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">LinkedIn</h4>
+                </div>
+              </a>
+            </div>
+
+
+              <div class="link-box">
+              <a href="{{basic.resume}}">
+                <div class="service-icon-box">
+                  <img src="{{assets.download_logo}}" alt="design icon" width="40">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Resume</h4>
+                </div>
+              </a>
+            </div>
+            </div>
+
+
+        </section>
+          
+      </article>
+
+
+      <!--
+        - #EXPERIENCE
+      -->
+
+      <article class="work" data-page="experience">
+
+        <header>
+          <h2 class="h2 article-title">Experience</h2>
+        </header>
+
+        <section class="timeline">
+
+          <ol class="timeline-list">
+
+            {% for item in experience %}
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">{{item.title | safe}}</h4>
+
+              <span>{{item.tenure | safe}}</span>
+              <span><i>{{item.location | safe}}</i></span>
+              <ul>
+                {% for item_text in item.text %}
+                <li class="timeline-text">{{item_text | safe}}</li>
+                {% endfor %}
+              </ul>
+
+            </li>
+
+            {% endfor %}
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #EDUCATION
+      -->
+
+      <article class="education" data-page="education">
+
+        <header>
+          <h2 class="h2 article-title">Education</h2>
+        </header>
+
+        <section class="timeline">
+
+          <ol class="timeline-list">
+            
+            {% for item in education %}
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">{{item.school | safe}}</h4>
+
+              <span>{{item.tenure | safe}}</span>
+              <ul>
+                {% for item_text in item.text %}
+                <li class="timeline-text">{{item_text | safe}}</li>
+                {% endfor %}
+              </ul>
+            
+            {% endfor %}
+
+          </ol>
+
+        </section>
+      </article>
+
+
+
+      <!--
+        - #SKILLS
+      -->
+
+      <article class="work" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">Skills</h2>
+        </header>
+
+        {% for skill in skills %}
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">{{skill.title | safe}}</h3>
+
+          <ul class="skills-list content-card">
+
+            {% for item in skill.fields %}
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">{{item.name | safe}}</h5>
+                <data value="{{item.percent}}">{{item.percent}}%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: {{item.percent}}%;"></div>
+              </div>
+
+            </li>
+
+            {% endfor %}
+
+          </ul>
+
+        </section>
+
+        {% endfor %}
+      
+      </article>
+
+
+
+      <!--
+        - #POSTS
+      -->
+
+      <article class="posts" data-page="posts">
+
+        <header>
+          <h2 class="h2 article-title">Posts</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            {% for post in posts %}
+
+            <li class="blog-post-item">
+              <a href="{{post.link}}">
+
+                <figure class="blog-banner-box">
+                  <img src="{{post.image}}" alt="{{post.title | safe}}}}" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">{{post.site_name | safe}}</p>
+
+                    <span class="dot"></span>
+
+                    {% if post.date %}
+                    <time datetime="{{post.date}}">{{post.date | safe}}</time>
+                    {% endif %}
+                  </div>
+
+                  <h3 class="h3 blog-item-title">{{post.title | safe}}</h3>
+
+                  <p class="blog-text">
+                    {{post.description | safe}}
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            {% endfor %}
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="{{contact.map_location}}"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section>
+          <div class="link-flexbox">
+            <div class="link-box">
+              <a href="{{basic.email}}" class="social-link" target="blank">
+                <div class="service-icon-box">
+                  <img src="{{assets.email_logo}}" width="40"/>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">E-Mail</h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="link-box">
+            <a href="{{basic.linkedin}}" class="social-link" target="blank">
+              <div class="service-icon-box">
+                  <img src="{{assets.linkedin_logo}}" width="40"/>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">LinkedIn</h4>
+              </div>
+            </a>
+          </div>
+
+
+      </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="{{page.script}}"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

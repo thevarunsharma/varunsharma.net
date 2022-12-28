@@ -1,0 +1,147 @@
+page:
+  title: Varun Sharma
+  icon: https://assets.varunsharma.net/icons/logo.ico
+  css: https://assets.varunsharma.net/css/style.css
+  script: https://assets.varunsharma.net/scripts/script.js
+basic:
+  name: Varun Sharma
+  profile_img: https://assets.varunsharma.net/media/profile_pic.jpg
+  title: Software Engineer, Site Reliability
+  email: varunsh1701@gmail.com
+  address: Bengaluru, Karnataka, India
+  linkedin: https://lnkd.in/thevarunsharma
+  github: https://github.com/thevarunsharma
+  resume: "#"
+
+about:
+  text: |
+    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+    I enjoy turning complex problems into simple, beautiful and intuitive designs.
+
+    My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+    Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+
+experience:
+  - title: Site Reliability Engineer
+    tenure: July 2021 - Present
+    location: Bengaluru, India
+    text:
+      - Working with the Edge Infrastructure team, responsible for managing LinkedIn's Edge Network which involves services like DNS, CDNs, Azure Front Door, TLS certificates and related tools.
+      - Developed an AI-based tool capable of intelligently orchestrating the Edge (AFD, PoPs, CDNs) on the DNS layer for optimal end-user availability. This completely automated the mundane task of manual fail-overs, cutting down on several man hours.
+      - Worked on migrating site-traffic from LinkedIn's legacy Edge on to Azure Front Door. Responsible for setting up Azure Front Door and DNS ramp for the migration.
+      - Worked closely with Microsoft Azure counterparts to help them recognise and solve ongoing issues with their AFD platform as it pertains to LinkedIn. Worked on devising a Proof of Concept for performing Automated Root Cause Analysis of such issues.
+      - Introduced manifold improvements to LinkedIn's url short-link feature - lnkd.in - by aligning stakeholders to remove extra redirect and by onboarding it to AFD with Caching at the Edge.
+
+  - title: Site Reliability Engineering Intern
+    tenure: May 2020 - July 2020
+    location: Bengaluru, India (Remote)
+    text:
+      - Worked with the Capacity Engineering team to devise an AI pipeline for diagnosing site performance issues and detecting capacity bottlenecks in Linkedin's RESTful service oriented infrastructure.
+
+education:
+  - school: Netaji Subhas Institute of Technology
+    tenure: August 2017 — June 2021
+    text:
+      - <i> Univeristy of Delhi</i>
+      - <b>Bachelor of Engineeering in Computer Engineering</b> 
+      - "CGPA: 8.65/10"
+  - school: Central Board of Secondary Education
+    tenure: 2016 — 2017
+    text:
+      - <i>Class 12th</i>
+      - "Score: 97.0%"
+  - school: Central Board of Secondary Education
+    tenure: 2014 — 2015
+    text:
+      - <i>Class 10th</i>
+      - "CGPA: 10.0/10"
+      
+
+skills:
+  - title: Programming
+    fields:
+      - name: Python
+        percent: 90
+      - name: Java
+        percent: 70
+      - name: C/C++
+        percent: 60
+      - name: Golang
+        percent: 50
+      - name: JavaScript
+        percent: 60
+      - name: Data Structures and Algorithms
+        percent: 80
+  - title: Computer Networks
+    fields:
+      - name: Domain Name System (DNS)
+        percent: 80
+      - name: Content Delivery Networks (CDNs)
+        percent: 80 
+      - name: Distrbuted Networks
+        percent: 60
+      - name: TCP/IP
+        percent: 70
+      - name: Microsoft Azure
+        percent: 65
+  - title: Internet Technologies
+    fields:
+      - name: Python-Flask Framework
+        percent: 85
+      - name: REST-APIs
+        percent: 70
+      - name: Spring-Boot
+        percent: 50
+      - name: HTTP/HTTPS
+        percent: 70
+  - title: Datastores
+    fields:
+      - name: MySQL
+        percent: 65
+      - name: Azure Blob Storage
+        percent: 50
+      - name: Firebase
+        percent: 60
+      - name: RabbitMQ
+        percent: 50
+  - title: Tools
+    fields:
+      - name: Linux
+        percent: 70
+      - name: Docker
+        percent: 50 
+      - name: Git/Github
+        percent: 60
+  - title: Aritficial Intelligence
+    fields:
+      - name: Machine Learning
+        percent: 70
+      - name: Deep Learning
+        percent: 80
+      - name: Natural Language Processing
+        percent: 60
+      - name: Computer Vision
+        percent: 65
+      - name: Tensorflow
+        percent: 65
+      - name: Keras
+        percent: 75
+      - name: Scikit-Learn
+        percent: 75
+      - name: Mathematical Modelling
+        percent: 70
+# each entry should have atleast one valid link
+posts:
+  - title: Hybrid Edge using AFD & LinkedIn's PoPs
+    link: https://www.linkedin.com/feed/update/urn:li:activity:6903239693618573312/
+  - link: https://github.com/thevarunsharma    
+
+contact:
+  # gmap embeded iframe src
+  map_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.99740305037!2d77.3507368942719!3d12.953847717752192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1672225819939!5m2!1sen!2sin
+
+assets:
+  download_logo: https://assets.varunsharma.net/icons/download-icon.svg
+  github_logo: https://assets.varunsharma.net/icons/github-icon.svg
+  linkedin_logo: https://assets.varunsharma.net/icons/linkedin-icon.svg
+  email_logo: https://assets.varunsharma.net/icons/email-icon.svg
