@@ -16,6 +16,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Set FLASK_APP
+        run: echo "webapp.main:app" >> $FLASK_APP
+
+      - name: Test FLASK_APP
+        run: echo $FLASK_APP
 
       - name: Set up Python version
         uses: actions/setup-python@v1
