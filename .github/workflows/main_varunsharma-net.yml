@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'varunsharma-net'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C9276DEF82874B248ECCA1B3783ACAF3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D59E41CEA0034250B9504F72A6B309AE }}
