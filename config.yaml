@@ -3,10 +3,11 @@ page:
   icon: https://assets.varunsharma.net/icons/logo.ico
   css: https://assets.varunsharma.net/css/style.css
   script: https://assets.varunsharma.net/scripts/script.js
+
 basic:
   name: Varun Sharma
   profile_img: https://assets.varunsharma.net/media/profile_pic.jpg
-  title: Software Engineer, Site Reliability
+  title: Site Reliability Engineer at <b><a href="https://www.linkedin.com">LinkedIn</a></b>
   email: varunsh1701@gmail.com
   address: Bengaluru, Karnataka, India
   linkedin: https://lnkd.in/thevarunsharma
@@ -15,11 +16,13 @@ basic:
 
 about:
   text: |
-    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-    I enjoy turning complex problems into simple, beautiful and intuitive designs.
+    I am a Software Engineer based out of Banglore, India, working in Software Infrastructure and Site Reliability. During my current stint with <a href="https://www.linkedin.com">LinkedIn</a>, I've gained professional experience working with Edge Network Infrastructure of large-scale Internet-facing platforms. This involves managing, setting up and developing automation for technologies such as <i>Domain Name Systems</i> (<b>DNS</b>), <i>Content Delivery Networks</i> (<b>CDNs</b>) and <i>Edge-Proxies</i> (<b>Azure Front Door</b>, etc.).
 
-    My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-    Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+    I've got a knack for intelligent automation, and I love looking for patterns in repetitive tasks because I believe they're better off being done by a machine. In the SRE and DevOps world, such AI automation can prove to be revolutionary in areas such as reducing operational load and assisting engineers with incident response & triaging.
+
+    At <i>LinkedIn's Edge Infrastructure team</i>, I single-handedly proposed and built an intelligent automation system which is capable of orchestrating the Edge dynamically based on any set of configured performance metrics. I also worked on devising and building a pipeline which can perform automated Root-Cause Analysis for Azure Front Door-related availability SLA incidents at LinkedIn.
+
+    While interning with <i>LinkedIn's Capacity Engineering team</i>, I devised an AI-based pipeline which used statistical heuristics and graph search to infer the top root causes of anomalies during site capacity load tests.
 
 experience:
   - title: Site Reliability Engineer
@@ -134,7 +137,8 @@ skills:
 posts:
   - title: Hybrid Edge using AFD & LinkedIn's PoPs
     link: https://www.linkedin.com/feed/update/urn:li:activity:6903239693618573312/
-  - link: https://github.com/thevarunsharma    
+  - link: https://github.com/thevarunsharma  
+  - link: https://engineering.linkedin.com/blog/2021/rethinking-site-capacity-projections-with-capacity-analyzer  
 
 contact:
   # gmap embeded iframe src

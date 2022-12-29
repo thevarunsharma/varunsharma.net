@@ -46,9 +46,9 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="{{basic.name}}">{{basic.name}}</h1>
+          <h1 class="name" title="{{basic.name}}">{{basic.name | safe}}</h1>
 
-          <p class="title">{{basic.title}}</p>
+          <p class="title">{{basic.title | safe}}</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +74,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:{{basic.email}}" class="contact-link">{{basic.email}}</a>
+              <a href="mailto:{{basic.email}}" class="contact-link">{{basic.email | safe}}</a>
             </div>
 
           </li>
@@ -116,7 +116,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>{{basic.address}}</address>
+              <address>{{basic.address | safe}}</address>
             </div>
 
           </li>
