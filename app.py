@@ -7,7 +7,6 @@ from utils.cfg import (
     get_configs
 )
 
-
 app = Flask(__name__)
 configs = extract_post_meta(get_configs())
 
@@ -18,3 +17,7 @@ def index():
         "index.html",
         **configs
     )
+
+
+if __name__ == '__main__':
+    app.run()
