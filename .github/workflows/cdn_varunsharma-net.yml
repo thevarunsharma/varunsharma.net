@@ -5,6 +5,7 @@ on:
     branches: [ main ]
     paths:
       - "static/**"
+  workflow_dispatch:
 
 env:
   STORAGE_ACCOUNT_NAME: varunsharmanet
