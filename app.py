@@ -2,7 +2,7 @@ from flask import (
     Flask,
     render_template
 )
-from webapp.utils.cfg import (
+from utils.cfg import (
     extract_post_meta,
     get_configs
 )

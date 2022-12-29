@@ -1,7 +1,7 @@
 import logging
 import os
 import yaml
-from webapp.utils.scrape import Scraper
+from .scrape import Scraper
 
 log = logging.getLogger(__name__)
 PATH = os.environ.get("WEBAPP_CFG", "config.yaml")
