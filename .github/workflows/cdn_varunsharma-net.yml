@@ -26,8 +26,8 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-          for dir in css icons media
-            do az storage blob upload-batch --account-name $STORAGE_ACCOUNT_NAME -d $dir -s $dir --overwrite
+          for dir in css icons media scripts
+            do az storage blob upload-batch --account-name $STORAGE_ACCOUNT_NAME -d $dir -s static/$dir --overwrite
           done
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
