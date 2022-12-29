@@ -1,0 +1,41 @@
+name: Sync static asset changes to Blob Store and CDN
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "static/**"
+
+env:
+  STORAGE_ACCOUNT_NAME: varunsharmanet
+  CDN_PROFILE_NAME: cdnvarunsharmanet
+  CDN_ENDPOINT_NAME: varunsharmanet
+  RESOURCE_GROUP: DefaultResourceGroup-WUS2
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: azure/login@v1
+      with:
+          creds: ${{ secrets.AZURE_CREDENTIALS_CDN }}
+
+    - name: Upload to blob storage
+      uses: azure/CLI@v1
+      with:
+        script: |
+          for dir in css icons media
+            do az storage blob upload-batch --account-name $STORAGE_ACCOUNT_NAME -d $dir -s $dir --overwrite
+          done
+    - name: Purge CDN endpoint
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+           az cdn endpoint purge --content-paths  "/*" --profile-name $CDN_PROFILE_NAME --name $CDN_ENDPOINT_NAME --resource-group $RESOURCE_GROUP
+
+  # Azure logout
+    - name: logout
+      run: |
+            az logout
+      if: always()
