@@ -57,3 +57,11 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// blog text line clamp
+const blogText = document.getElementsByClassName("blog-text");
+// iterate and clamp line at 197 chars
+for (let i = 0; i < blogText.length; i++) {
+  if (blogText[i].innerHTML.length > 200)
+    blogText[i].innerHTML = blogText[i].innerHTML.slice(0, 197) + "...";
+}
