@@ -10,6 +10,7 @@ on:
       - main
     paths-ignore:
       - "static/**"
+      - ".github/workflows/cdn_varunsharma-net.yml"
   workflow_dispatch:
 
 jobs:
