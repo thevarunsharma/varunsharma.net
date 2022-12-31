@@ -138,8 +138,9 @@ skills:
 posts:
   - title: Hybrid Edge using AFD & LinkedIn's PoPs
     link: https://www.linkedin.com/feed/update/urn:li:activity:6903239693618573312/
-  - link: https://github.com/thevarunsharma  
-  - link: https://engineering.linkedin.com/blog/2021/rethinking-site-capacity-projections-with-capacity-analyzer  
+  - link: https://github.com/thevarunsharma
+  - link: https://pypi.org/project/pump-downloader/
+  - link: https://engineering.linkedin.com/blog/2021/rethinking-site-capacity-projections-with-capacity-analyzer
 
 contact:
   # gmap embeded iframe src
