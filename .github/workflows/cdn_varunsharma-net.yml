@@ -12,7 +12,7 @@ env:
   STORAGE_ACCOUNT_NAME: varunsharmanet
   CDN_PROFILE_NAME: cdnvarunsharmanet
   CDN_ENDPOINT_NAME: varunsharmanet
-  RESOURCE_GROUP: DefaultResourceGroup-WUS2
+  RESOURCE_GROUP: varunsharma-net_Resources
 
 jobs:
   build:
