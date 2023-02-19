@@ -1,0 +1,51 @@
+---
+? ''
+: - ttl: 600
+    type: A
+    values:
+    - 13.107.237.48
+    - 13.107.238.48
+  - ttl: 86400
+    type: NS
+    values:
+    - coby.ns.cloudflare.com.
+    - josephine.ns.cloudflare.com.
+    - ns1-33.azure-dns.com.
+    - ns2-33.azure-dns.net.
+    - ns3-33.azure-dns.org.
+    - ns4-33.azure-dns.info.
+_dnsauth:
+  type: TXT
+  value: njw1p24hr55jk5893lnvr2c0qyh0tg2p
+_dnsauth.assets:
+  type: TXT
+  value: q5lbhwffch80md60ydyscdtxc0thnsr5
+_dnsauth.www:
+  type: TXT
+  value: s8g7xsxmmcydqnslkt5bnt9yg67zdv2g
+assets:
+  ttl: 600
+  type: CNAME
+  value: varunsharmanet-h7gnayh2c3ech0e7.z01.azurefd.net.
+asuid:
+  type: TXT
+  value: 75AFC5B7A27CFAD557FADEFF43C8F4F151120102A0624B08E25528A65C94C5D0
+asuid.www:
+  type: TXT
+  value: 75AFC5B7A27CFAD557FADEFF43C8F4F151120102A0624B08E25528A65C94C5D0
+asverify.assets:
+  ttl: 600
+  type: CNAME
+  value: asverify.varunsharmanet.blob.core.windows.net.
+haproxy:
+  ttl: 600
+  type: A
+  value: 20.3.155.215
+octotest:
+  ttl: 300
+  type: CNAME
+  value: www.varunsharma.net.
+www:
+  ttl: 600
+  type: CNAME
+  value: afd-varunsharma-net-gkctcwhrghd8e6gp.z01.azurefd.net.

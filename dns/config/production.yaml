@@ -1,0 +1,38 @@
+---
+manager:
+  include_meta: False
+  max_workers: 2
+
+providers:
+  config:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./src
+    default_ttl: 3600
+    enforce_order: True
+  azure:
+    class: octodns_azure.AzureProvider
+    # The Azure Active Directory Application ID (aka client ID):
+    client_id: env/OCTODNS_AZURE_APPLICATION_ID
+    # Authentication Key Value: (note this should be secret)
+    key: env/OCTODNS_AZURE_AUTHENTICATION_KEY
+    # Directory ID (aka tenant ID):
+    directory_id: env/OCTODNS_AZURE_DIRECTORY_ID
+    # Subscription ID:
+    sub_id: env/OCTODNS_AZURE_SUBSCRIPTION_ID
+    # Resource Group name:
+    resource_group: varunsharma-net_Resources
+
+  cloudflare:
+    class: octodns_cloudflare.CloudflareProvider
+    # Cloudflare API token
+    token: env/OCTODNS_CLOUDFLARE_TOKEN
+    # Manage Page Rules (URLFWD) records
+    pagerules: False
+
+zones:
+  varunsharma.net.:
+    sources:
+      - config
+    targets:
+      - azure
+      - cloudflare
