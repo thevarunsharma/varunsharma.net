@@ -8,11 +8,12 @@ from utils.cfg import (
 )
 
 app = Flask(__name__)
-configs = extract_post_meta(get_configs())
+raw_configs = get_configs()
 
 
 @app.route("/")
 def index():
+    configs = extract_post_meta(raw_configs)
     return render_template(
         "index.html",
         **configs

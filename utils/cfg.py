@@ -2,16 +2,18 @@ import logging
 import os
 import yaml
 from .scrape import Scraper
+from diskcache import Cache
 
 log = logging.getLogger(__name__)
 PATH = os.environ.get("WEBAPP_CFG", "config.yaml")
+cache = Cache("tmp")
 
 def get_configs():
     with open(PATH, "r") as fh:
         configs = yaml.safe_load(fh)
     return configs
 
-
+@cache.memoize(expire=604800, tag="post_meta")
 def extract_post_meta(configs):
     posts = configs.get("posts", {})
 
@@ -26,7 +28,7 @@ def extract_post_meta(configs):
             post["site_name"] = post.get("site_name", scraper.get_og_site_name())
             post["link"] = scraper.get_og_url()
         except Exception as e:
-            log.exception(f"Some error occured while scraping {link}.\n{e}")
+            log.exception(f"Some error occurred while scraping {link}.\n{e}")
     
     return configs
         
