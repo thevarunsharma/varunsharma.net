@@ -8,7 +8,7 @@ page:
 basic:
   name: Varun Sharma
   profile_img: https://assets.varunsharma.net/media/profile_pic.jpg
-  title: Site Reliability Engineer at <b><a href="https://www.linkedin.com">LinkedIn</a></b>
+  title: Senior Engineer, Site Reliability<br/>at <b><a href="https://www.linkedin.com">LinkedIn</a></b>
   email: varunsh1701@gmail.com
   address: Bengaluru, Karnataka, India
   linkedin: https://lnkd.in/thevarunsharma
@@ -26,8 +26,13 @@ about:
     While interning with <i>LinkedIn's Capacity Engineering team</i>, I devised an AI-based pipeline which used statistical heuristics and graph search to infer the top root causes of anomalies during site capacity load tests.
 
 experience:
+  - title: Senior Engineer, Site Reliability
+    tenure: Oct 2023 - Present
+    location: Bengaluru, India
+    text:
+      - Senior Individual Contributor in the Edge Performance and Engineering team at LinkedIn
   - title: Site Reliability Engineer
-    tenure: July 2021 - Present
+    tenure: July 2021 - Sept 2023
     location: Bengaluru, India
     text:
       - Working with the Edge Infrastructure team, responsible for managing LinkedIn's Edge Network which involves services like DNS, CDNs, Azure Front Door, TLS certificates and related tools.
