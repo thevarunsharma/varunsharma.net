@@ -2,8 +2,8 @@ import logging
 import os
 import yaml
 from utils.scrape import (
-    SoupScraper,
-    PlaywrightScraper
+    MicrolinkScraper,
+    SoupScraper
 )
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from diskcache import Cache
@@ -35,7 +35,7 @@ def get_post_meta(post):
     link = post.get("link", "#")
     captcha = post.get("captcha", False)
     try:
-        scraper = PlaywrightScraper(link) if captcha else SoupScraper(link)
+        scraper = MicrolinkScraper(link) if captcha else SoupScraper(link)
     except Exception as e:
         log.exception(f"Some error occurred while scraping {link}.\n{e}")
         return post
