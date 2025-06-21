@@ -17,13 +17,15 @@ basic:
 
 about:
   text: |
-    I am a Software Engineer based out of Banglore, India, working in Software Infrastructure and Site Reliability. During my current stint with <a href="https://www.linkedin.com">LinkedIn</a>, I've gained professional experience working with Edge Network Infrastructure of large-scale Internet-facing platforms. This involves managing, setting up and developing automation for technologies such as <i>Domain Name Systems</i> (<b>DNS</b>), <i>Content Delivery Networks</i> (<b>CDNs</b>) and <i>Edge-Proxies</i> (<b>Azure Front Door</b>, etc.).
+    Hi, I’m a Software Engineer based in Bangalore, India, working in Software Infrastructure and Site Reliability.
 
-    I've got a knack for intelligent automation, and I love looking for patterns in repetitive tasks because I believe they're better off being done by a machine. In the SRE and DevOps world, such AI automation can prove to be revolutionary in areas such as reducing operational load and assisting engineers with incident response & triaging.
+    At <a href="https://www.linkedin.com">LinkedIn</a>, I’ve been fortunate to gain hands-on experience with the Edge Network Infrastructure that powers large-scale, internet-facing platforms. My work involves building and automating systems around technologies like <i>Domain Name Systems</i> (<b>DNS</b>), <i>Content Delivery Networks</i> (<b>CDNs</b>) and <i>Edge-Proxies</i> (<b>Cloudflare</b>, <b>Azure Front Door</b>, etc.).
 
-    At <i>LinkedIn's Edge Infrastructure team</i>, I single-handedly proposed and built an intelligent automation system which is capable of orchestrating the Edge dynamically based on any set of configured performance metrics. I also worked on devising and building a pipeline which can perform automated Root-Cause Analysis for Azure Front Door-related availability SLA incidents at LinkedIn.
+    I’m especially passionate about intelligent automation. I enjoy spotting patterns in repetitive tasks and finding ways to automate them—because I believe those tasks are better handled by machines. In the SRE and DevOps space, I see a lot of potential for AI to reduce operational load and support engineers during incident response and triaging.
 
-    While interning with <i>LinkedIn's Capacity Engineering team</i>, I devised an AI-based pipeline which used statistical heuristics and graph search to infer the top root causes of anomalies during site capacity load tests.
+    At <i>LinkedIn's Edge Infrastructure team</i>, I built an automation system that can dynamically orchestrate Edge infrastructure based on performance metrics. I also developed a pipeline that performs automated Root-Cause Analysis for Azure Front Door-related availability incidents.
+
+    During my internship with <i>LinkedIn's Capacity Engineering team</i>, I designed an AI-based pipeline that used statistical heuristics and graph search to identify top root causes of anomalies during site load testing.
 
 experience:
   - title: Senior Engineer, Site Reliability
@@ -38,8 +40,8 @@ experience:
       - Working with the Edge Infrastructure team, responsible for managing LinkedIn's Edge Network which involves services like DNS, CDNs, Azure Front Door, TLS certificates and related tools.
       - Developed an AI-based tool capable of intelligently orchestrating the Edge (AFD, PoPs, CDNs) on the DNS layer for optimal end-user availability. This completely automated the mundane task of manual fail-overs, cutting down on several man hours.
       - Worked on migrating site-traffic from LinkedIn's legacy Edge on to Azure Front Door. Responsible for setting up Azure Front Door and DNS ramp for the migration.
-      - Worked closely with Microsoft Azure counterparts to help them recognise and solve ongoing issues with their AFD platform as it pertains to LinkedIn. Worked on devising a Proof of Concept for performing Automated Root Cause Analysis of such issues.
-      - Introduced manifold improvements to LinkedIn's url short-link feature - lnkd.in - by aligning stakeholders to remove extra redirect and by onboarding it to AFD with Caching at the Edge.
+      - Worked closely with Microsoft Azure counterparts to help them recognize and solve ongoing issues with their AFD platform as it pertains to LinkedIn. Worked on devising a Proof of Concept for performing Automated Root Cause Analysis of such issues.
+      - Introduced manifold improvements to LinkedIn's url short-link feature - <i>lnkd.in</i> - by aligning stakeholders to remove extra redirect and by onboarding it to AFD with Caching at the Edge.
 
   - title: Site Reliability Engineering Intern
     tenure: May 2020 - July 2020
