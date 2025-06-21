@@ -145,6 +145,7 @@ posts:
     link: https://www.linkedin.com/feed/update/urn:li:activity:6903239693618573312/
   - link: https://github.com/thevarunsharma
   - link: https://pypi.org/project/pump-downloader/
+    captcha: true
   - link: https://engineering.linkedin.com/blog/2021/rethinking-site-capacity-projections-with-capacity-analyzer
 
 contact:

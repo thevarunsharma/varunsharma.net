@@ -1,13 +1,15 @@
 import urllib.request
+import re
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
+from utils.scrape.base import BaseScraper
 
 
-class Scraper:
+class SoupScraper(BaseScraper):
 
     def __init__(self,
                  url):
-        self.url = url
+        super().__init__(url)
         response = urllib.request.urlopen(self.url)
         self.soup = BeautifulSoup(
             response, 
