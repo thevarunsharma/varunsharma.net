@@ -1,11 +1,11 @@
-# personal-website
+# varunsharma.net
 
 Static version of `varunsharma.net`, migrated from the existing Flask application. Production does not run Flask: `data.yaml` plus Jinja templates are rendered into static HTML by `generate.py`, then deployed through GitHub Pages.
 
 ## Repository Structure
 
 ```text
-personal-website/
+varunsharma.net/
 ├── data.yaml
 ├── generate.py
 ├── requirements.txt
@@ -60,7 +60,7 @@ Changing `data.yaml` and pushing to `main` triggers GitHub Actions, regenerates 
 
 ## GitHub Pages Deployment
 
-1. Create a new GitHub repository named `personal-website`.
+1. Create a new GitHub repository named `varunsharma.net`.
 2. Push this repository to GitHub with `main` as the default branch.
 3. In GitHub, go to `Settings` -> `Pages`.
 4. Set `Build and deployment` source to `GitHub Actions`.

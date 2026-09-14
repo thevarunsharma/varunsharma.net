@@ -11,7 +11,7 @@ class SoupScraper(BaseScraper):
         super().__init__(url)
         request = urllib.request.Request(
             self.url,
-            headers={"User-Agent": "personal-website-generator/1.0"},
+            headers={"User-Agent": "varunsharma.net-generator/1.0"},
         )
         response = urllib.request.urlopen(request, timeout=15)
         self.soup = BeautifulSoup(
