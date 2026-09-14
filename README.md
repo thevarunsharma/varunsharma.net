@@ -60,11 +60,12 @@ Changing `data.yaml` and pushing to `main` triggers GitHub Actions, regenerates 
 
 ## GitHub Pages Deployment
 
-1. Create a new GitHub repository named `varunsharma.net`.
-2. Push this repository to GitHub with `main` as the default branch.
-3. In GitHub, go to `Settings` -> `Pages`.
-4. Set `Build and deployment` source to `GitHub Actions`.
-5. Push to `main` or run the `Deploy static site to GitHub Pages` workflow manually.
+This repository is hosted at `thevarunsharma/varunsharma.net`. In GitHub, go to
+`Settings` -> `Pages` and ensure the `Build and deployment` source is set to
+`GitHub Actions`.
+
+Push to `main` or run the `Deploy static site to GitHub Pages` workflow manually
+to deploy the site.
 
 The workflow checks out the repository, installs dependencies from `requirements.txt`, runs `python generate.py`, uploads `dist/`, and deploys it with the official GitHub Pages actions.
 
